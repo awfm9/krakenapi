@@ -571,6 +571,7 @@ type TradeInfo struct {
 
 // LedgersResponse represents an associative array of ledgers infos
 type LedgersResponse struct {
+	Count  uint                  `json:"count"`
 	Ledger map[string]LedgerInfo `json:"ledger"`
 }
 
