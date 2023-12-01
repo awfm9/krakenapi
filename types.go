@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/iancoleman/orderedmap"
+	orderedmap "github.com/wk8/go-ordered-map/v2"
 )
 
 // trade pairs constants
@@ -571,8 +571,8 @@ type TradeInfo struct {
 
 // LedgersResponse represents an associative array of ledgers infos
 type LedgersResponse struct {
-	Count  uint                   `json:"count"`
-	Ledger *orderedmap.OrderedMap `json:"ledger"`
+	Count  uint                                        `json:"count"`
+	Ledger *orderedmap.OrderedMap[string, *LedgerInfo] `json:"ledger"`
 }
 
 // LedgerInfo Represents the ledger informations
