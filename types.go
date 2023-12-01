@@ -31,8 +31,8 @@ const (
 	GNOEUR   = "GNOEUR"
 	GNOUSD   = "GNOUSD"
 	GNOXBT   = "GNOXBT"
-	LINKUSD   = "LINKUSD"
-	LINKXBT   = "LINKXBT"
+	LINKUSD  = "LINKUSD"
+	LINKXBT  = "LINKXBT"
 	QTUMCAD  = "QTUMCAD"
 	QTUMETH  = "QTUMETH"
 	QTUMEUR  = "QTUMEUR"
@@ -604,14 +604,14 @@ type LedgersResponse struct {
 
 // LedgerInfo Represents the ledger informations
 type LedgerInfo struct {
-	RefID   string    `json:"refid"`
-	Time    float64   `json:"time"`
-	Type    string    `json:"type"`
-	Aclass  string    `json:"aclass"`
-	Asset   string    `json:"asset"`
-	Amount  big.Float `json:"amount"`
-	Fee     big.Float `json:"fee"`
-	Balance big.Float `json:"balance"`
+	RefID   string  `json:"refid"`
+	Time    float64 `json:"time"`
+	Type    string  `json:"type"`
+	Aclass  string  `json:"aclass"`
+	Asset   string  `json:"asset"`
+	Amount  string  `json:"amount"`
+	Fee     string  `json:"fee"`
+	Balance string  `json:"balance"`
 }
 
 // OrderTypes for AddOrder
