@@ -242,7 +242,7 @@ type AssetInfo struct {
 	// Scaling decimal places for output display
 	DisplayDecimals uint8 `json:"display_decimals"`
 	// Collateral value for asset.
-	CollateralValue uint8 `json:"collateral_value"`
+	CollateralValue float32 `json:"collateral_value"`
 	// Status of asset
 	Status string `json:"status"`
 }
