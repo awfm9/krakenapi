@@ -229,9 +229,7 @@ type AssetPairInfo struct {
 }
 
 // AssetsResponse includes asset informations
-type AssetsResponse struct {
-	Result map[string]*AssetInfo `json:"result"`
-}
+type AssetsResponse map[string]*AssetInfo
 
 // AssetInfo represents an asset information
 type AssetInfo struct {
