@@ -230,39 +230,7 @@ type AssetPairInfo struct {
 
 // AssetsResponse includes asset informations
 type AssetsResponse struct {
-	ADA  AssetInfo
-	AAVE AssetInfo
-	BCH  AssetInfo
-	DASH AssetInfo
-	EOS  AssetInfo
-	GNO  AssetInfo
-	KFEE AssetInfo
-	LINK AssetInfo
-	QTUM AssetInfo
-	USDC AssetInfo
-	USDT AssetInfo
-	XDAO AssetInfo
-	XETC AssetInfo
-	XETH AssetInfo
-	XICN AssetInfo
-	XLTC AssetInfo
-	XMLN AssetInfo
-	XNMC AssetInfo
-	XREP AssetInfo
-	XXBT AssetInfo
-	XXDG AssetInfo
-	XXLM AssetInfo
-	XXMR AssetInfo
-	XXRP AssetInfo
-	XTZ  AssetInfo
-	XXVN AssetInfo
-	XZEC AssetInfo
-	ZCAD AssetInfo
-	ZEUR AssetInfo
-	ZGBP AssetInfo
-	ZJPY AssetInfo
-	ZKRW AssetInfo
-	ZUSD AssetInfo
+	Result map[string]*AssetInfo `json:"result"`
 }
 
 // AssetInfo represents an asset information
