@@ -236,13 +236,17 @@ type AssetsResponse struct {
 // AssetInfo represents an asset information
 type AssetInfo struct {
 	// Alternate name
-	Altname string
+	Altname string `json:"altname"`
 	// Asset class
 	AssetClass string `json:"aclass"`
 	// Scaling decimal places for record keeping
-	Decimals int
+	Decimals uint8 `json:"decimals"`
 	// Scaling decimal places for output display
-	DisplayDecimals int `json:"display_decimals"`
+	DisplayDecimals uint8 `json:"display_decimals"`
+	// Collateral value for asset.
+	CollateralValue uint8 `json:"collateral_value"`
+	// Status of asset
+	Status string `json:"status"`
 }
 
 // BalanceResponse represents the account's balances (list of currencies)
